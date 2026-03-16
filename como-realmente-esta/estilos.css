@@ -38,10 +38,12 @@ body,html {
       align-items: center;
       padding: 10px 20px;
       margin: 0 auto;
+      max-width: 400px;
     }
 
     .avatar {
-    width: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
     outline: none;
@@ -94,11 +96,12 @@ nav li a:hover {
 }
 
 main { 
-  max-width: 800px ;
+  max-width: 600px ;
   text-align: justify; 
   margin: 20px auto;
   padding: 20px;
   background-color: #665db6;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -127,7 +130,6 @@ img{
 .menu-item a { color: white;
   text-decoration: none;
   font-weight: bold;
-
 }
 
 .submenu {
@@ -139,6 +141,7 @@ img{
   min-width: 200px;
   padding: 10px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2); 
+  border-radius: 5%;
 }
 
 .submenu li {
@@ -147,7 +150,8 @@ img{
 }
 
 .submenu li:hover {
-    background-color: #555;
+    background-color: #215ac5;
+
 }
 
 .menu-item:hover .submenu {
@@ -306,7 +310,7 @@ border-style: double;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: auto;
 }
 
 .cancelbtn {
@@ -319,5 +323,6 @@ border-style: double;
 }
 
  footer { text-align: center;
-              font-size: 12px; 
-              padding: 20px ;}
+              font-size: 9px; 
+              padding: 20px ;
+              margin-top: auto;}
