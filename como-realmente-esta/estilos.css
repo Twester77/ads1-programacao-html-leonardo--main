@@ -1,3 +1,20 @@
+
+*{ margin: 0; padding: 0; box-sizing:border-box;}
+
+:root {
+    --cor-principal: #004a8d; /* Exemplo de azul UNIFEV */
+    --cor-hover: #0066c0;
+    --cor-logout: #e74c3c; /* Vermelho para o Sair */
+}
+
+.nav-link:hover {
+    background-color: var(--cor-hover);
+    transform: translateY(-2px); /* Dá um efeito leve de levitação */
+    transition: 0.3s;
+}
+
+
+
 body,html {
  height: 100%;
  background-color: rgb(49, 48, 146);
@@ -15,8 +32,23 @@ body,html {
         text-align: center;
     }
 
-   
-    .container { 
+    .imgcontainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 0 auto;
+    }
+
+    .avatar {
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: none;
+    background: transparent;
+    }
+
+    .container {
       
         display: flex;
         margin: 0 auto;         
@@ -76,15 +108,7 @@ img{
   border: #000 solid 1px;
 }
 
-.avatar {
-    width: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: none;
-    outline: none;
-    background: transparent;
-    
-}
+
 .menu {
   display: flex;
   flex-wrap: wrap; 
@@ -98,6 +122,36 @@ img{
 
 .menu-item {
   position: relative; 
+}
+
+.menu-item a { color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.submenu {
+  display: none;
+  flex-direction: column; 
+  position: absolute; 
+  background-color: rgb(60, 58, 160); 
+  z-index: 1000;      
+  min-width: 200px;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2); 
+}
+
+.submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.submenu li:hover {
+    background-color: #555;
+}
+
+.menu-item:hover .submenu {
+    display: block;
 }
 
 .dropdown > a::after {
@@ -117,16 +171,7 @@ img{
   flex-direction: column;
 }
 
-.submenu {
-  display: none;
-  flex-direction: column; 
-  position: absolute; 
-  background-color: rgb(60, 58, 160); 
-  z-index: 1000;      
-  min-width: 200px;
-  padding: 10px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2); 
-}
+
 
 
 nav a { 
