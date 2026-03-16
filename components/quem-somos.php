@@ -1,10 +1,10 @@
 
-<?php include 'header.php'; ?>
-<?php include 'navbar.php'; ?>
+<?php include 'components/header.php'; ?>
+<?php include 'components/navbar.php'; ?>
 
 
 </nav>
-<main style="max-width: 800px; margin: auto;">
+<main style="max-width: 1000px; margin: auto;">
     <article>
   <h2 style="font-size: 22px; text-align: center; margin-bottom: 20px;"> MAS AFINAL, QUEM NÓS SOMOS? </h2>
   <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
@@ -18,4 +18,4 @@
 </article>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include 'components/footer.php'; ?>

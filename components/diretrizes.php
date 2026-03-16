@@ -1,7 +1,7 @@
 
 
-<?php include 'header.php'; ?>
-<?php include 'navbar.php'; ?>
+<?php include 'components/header.php'; ?>
+<?php include 'component/snavbar.php'; ?>
 
 
 </nav>
@@ -63,4 +63,4 @@
 
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include 'components/footer.php'; ?>
